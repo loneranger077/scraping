@@ -6,7 +6,7 @@ function getResults() {
   $("#results").empty();
  
   $.getJSON("/all", function(data) {
-   ..
+   
     for (var i = 0; i < data.length; i++) {
       
       $("#results").prepend("<p class='data-entry' data-id=" + data[i]._id + "><span class='dataTitle' data-id=" +
